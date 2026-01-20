@@ -1,15 +1,7 @@
 body {
-    background: 
-        linear-gradient(to bottom, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 15%),
-        linear-gradient(to bottom, rgba(0,0,0,0) 0%, #0000009c 600px), 
-        url('https://lochaydeoliveira.github.io/blaze-games-styles/assets/banners/banner-bg-cart.png') no-repeat top center !important;
-    
-    background-size: cover !important; 
-    background-color: #000000 !important;
+    background-color: #f8f2ed!important;
     background-attachment: scroll !important;
-    
     color: #ffffff !important;
-    font-family: 'Inter', sans-serif !important;
 }
 
 body::before {
@@ -19,7 +11,7 @@ body::before {
     justify-content: center;
     width: 100%;
     height: 40px;
-    background: linear-gradient(270deg, #000000, #1c1d20, #ec651a, #000000);
+    background: linear-gradient(270deg, #000000, #1c1d20, #ff8f00, #000000);
     background-size: 400% 400%;
     color: #fff;
     font-weight: 800;
@@ -30,17 +22,27 @@ body::before {
     animation: gradient-flow 8s ease infinite, slide-ads 12s infinite;
 }
 
-header.clearfix, 
+@media (max-width: 1060px) {
+    .holder-cols-checkout .box-checkout.box-resume .box-content>div:not(.holder-container-resume,.--mobile-header,.--with-preview):after {
+        right: 0!important;
+        background: none!important;
+    }
+}
+/* header.clearfix, 
 .inner-body, 
 .container, 
 .holder-cols-checkout {
     background: transparent !important;
     border: none !important;
     box-shadow: none!important;
-}
+} */
 
 .clearfix .cart-header {
   display: none!important;
+}
+
+.holder-cols-checkout .box-checkout {
+    margin: 2rem 0 auto!important;
 }
 
 .visible-desktop-only {
@@ -48,7 +50,7 @@ header.clearfix,
 }
 
 .form-group .label-control {
-    color: #d1d1d1!important;
+    color: #2b2b2b!important;
 }
 
 .black-70 {
@@ -78,36 +80,37 @@ header.clearfix,
 .holder-cols-checkout .box-checkout,
 .holder-cols-checkout .cart-resume,
 .item-cart {
-    background: #1c1d20 !important;
-    border: 1px solid #333 !important;
+    background: #ffffff !important;
+    border: none!important;
     border-radius: 10px !important;
-    box-shadow: 0 15px 50px rgba(0,0,0,0.9) !important;
+    box-shadow: 0 15px 50px rgb(231 216 203 / 84%) !important;
 }
 
 
 .ctx-title, .title, .product-name, .price, .label-cart, 
 .box-resume .detail .label, .box-resume .detail .value,
 .cart-resume .detail, span, p, .desc, .f12, .f14 {
-    color: #ffffff !important;
+    color: #212529bf!important;
     opacity: 1 !important;
 }
 
 .holder-cols-checkout .discount-info .discount-info-description p .discount-percentage {
-    color: var(--cart-total-color)!important;
+    color: #479d95 !important;
 }
 
 .holder-cols-checkout .discount-info .discount-info-description p {
-    color: #fdfdfd!important;
+    color: #000000!important;
 }
 
 
 @media (max-width: 500px) {
 .checkout-step.active .info {
-    color: #fff!important;
+    color: #585b5e !important;
+    font-size: 15px;
  }
 
 .checkout-step .info {
-    color: #d9d9d9!important;
+    color: #000000!important;
  }
 }
 
@@ -120,8 +123,8 @@ header.clearfix,
 }
 
 .holder-cols-checkout .discount-info {
-    border: dashed 2px #ec651a!important;
-    background: none!important;
+    border: dashed 2px #42c3b7 !important;
+    background: #e4f9f794 !important;
 }
 
 .icon-pix-store-negative {
@@ -137,12 +140,12 @@ header.clearfix,
 
 
 .total-price, .cart_total, .detail.total .value, .holder-number {
-    color: #ec651a !important;
+    color: #ff8f00 !important;
     font-weight: 800 !important;
 }
 
 .btn-primary, .btn-submit-cart {
-    background-color: #ec651a !important;
+    background-color: #ff8f00 !important;
     border: none !important;
     font-weight: 700 !important;
     text-transform: uppercase !important;
@@ -157,7 +160,7 @@ header .item-security {
 
 footer {
     background-color: #000000 !important;
-    border-top: 1px solid #ec651a75 !important;
+    border-top: 1px solid #ff8f0075 !important;
 }
 
 span.f11.black-50::after {
@@ -168,6 +171,17 @@ span.f11.black-50::after {
     line-height: 1.8;
 }
 
+.-whatsapp {
+    color: #c9c9c9 !important;
+}
+
+.-email {
+     color: #c9c9c9 !important;   
+}
+
+.-email span {
+     color: #c9c9c9 !important;   
+}
 
 @keyframes gradient-flow {
     0% { background-position: 0% 50%; }
@@ -175,8 +189,8 @@ span.f11.black-50::after {
     100% { background-position: 0% 50%; }
 }
 @keyframes slide-ads {
-    0%, 48% { content: "PAGAMENTO VIA PIX ENVIAMOS EM 24H"; }
-    52%, 100% { content: "ENTREGA GARANTIDA EM TODO O BRASIL"; }
+    0%, 48% { content: "DESIGN QUE VENDE"; }
+    52%, 100% { content: "IDENTIDADE VISUAL EXCLUSIVA"; }
 }
 
 
