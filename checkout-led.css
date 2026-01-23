@@ -131,6 +131,10 @@ body::before {
     background: #e4f9f794 !important;
 }
 
+.holder-cols-checkout .payments .pix-price {
+    color: #56595d!important;
+}
+
 .icon-pix-store-negative {
     background: url(https://lochaydeoliveira.github.io/blaze-games-styles/assets/banners/icone-pix-branco.png) no-repeat;
     background-size: contain;
