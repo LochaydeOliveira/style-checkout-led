@@ -118,6 +118,10 @@ body::before {
     color: var(--step-tag-txt-color)!important;
 }
 
+.holder-cols-checkout .box-checkout:not(.active):not(.disabled):not(.box-resume):not(.box-payment) .holder-number {
+    color: #fff!important;
+}
+
 .table-cart .table-cart-head {
     color: #ffffff!important;
 }
